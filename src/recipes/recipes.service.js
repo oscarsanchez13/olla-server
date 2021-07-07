@@ -2,8 +2,8 @@ const db = require("../../db")
 
 const RecipesService = {
     async getAllRecipes(knex) {
-        return db()
-        // return knex.select('*').from('recipes')
+        // return db()
+        return knex.select('*').from('recipes')
     },
     getById(knex, id) {
         return knex 
