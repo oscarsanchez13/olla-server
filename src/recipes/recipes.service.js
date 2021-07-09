@@ -2,8 +2,8 @@ const db = require("../../db")
 
 const RecipesService = {
     async getAllRecipes(knex) {
-        // return db()
-        return knex.select('*').from('recipes')
+        return db()
+        // return knex.select('*').from('recipes')
     },
     getById(knex, id) {
         return knex 
@@ -13,11 +13,13 @@ const RecipesService = {
             .first()
     },
     insertRecipe(knex, newRecipe) {
-        return knex
-            .insert(newRecipe)
-            .into('recipes')
-            .returning('*')
-            .then(rows => rows[0])
+        // return knex
+        //     .insert(newRecipe)
+        //     .into('recipes')
+        //     .returning('*')
+        //     .then(rows => rows[0])
+        db().push(newRecipe)
+        console.log(db())
     },
     deleteRecipe(knex, id) {
         return knex
