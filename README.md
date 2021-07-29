@@ -1,26 +1,32 @@
-# Express Boilerplate!
+# OLLA
+Thinkful (https://thinkful.com/) Fullstack Capstone Project- a responsive website site that demonstrate mastery of React, Node, and PostgreSQL by building both the client and the API to support the app.
 
-This is a boilerplate project used for starting new projects!
+## Live Site
+You can find OLLA? 
+Server - https://oscarsanchez13.github.io/olla-server/
+Client - https://oscarsanchez13.github.io/olla-client/
 
-## Set up
+![OLLA Landing Page](https://github.com/oscarsanchez13/olla-client/blob/main/screenshots/screenshot-landing.PNG)
+![OLLA Discover Brews](https://github.com/oscarsanchez13/olla-client/blob/main/screenshots/screenshot-discover.PNG)
+![OLLA Create Recipe](https://github.com/oscarsanchez13/olla-client/blob/main/screenshots/screenshot-create.PNG)
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+## Introduction
+OLLA provides a place where coffee aficionados can save their favorite coffee recipes, learn more about such drinks, find out whether they would like them, and submit their own recipes for others to try! and will allow users to submit recipes by filling out a easy to follow form.
 
-## Scripts
+## Use Case
+The user of this app will be able to join a community where he can easily share his own creations for others to try aswel as discovering others works.
 
-Start the application `npm start`
+## UX
+The initial wireframes for the page and the list of results can be seen below.
 
-Start nodemon for the application `npm run dev`
+https://gist.github.com/oscarsanchez13/e577445b7f8f0b1e1501ef867f244172
 
-Run the tests `npm test`
+## Technical
+* The app was built using JavaScript, jQuery, React, Node, and PostgreSQL.
+* The app is fully responsive.
 
-## Deploying
-
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's main branch.
+## Features Coming Soon
+* Implement a "Favorite" folder to user profiles where they can add/remove recipes found.
+* Ability to create a user profile
+* Adding more detailed categories to "Create Recipe" form, such as flavor profile, calories per drink, and a searching feature that finds nearby coffee houses using https://Foursquare.com API.
